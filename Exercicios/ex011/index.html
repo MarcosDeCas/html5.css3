@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Utilizando a tag PICTURE podemos fazer com que as imagens se tornem dinâmicas e se adaptem ao tamanho da tela do usuário, dentro da tag picture usamos podemos usar a tag IMG e a cereja do bolo, a tag SOURCE, nesse caso em específico usamos a tag SOUCE:MEDIA:TYPE, contudo existem outras váriações. Dentro da variavel MEDIA é recomendado sempre usar max-width ao inves de min-width, logo após informar em px (pixels) o tamanho maximo que a imagem não pode ultrapassar para não ser trocada pela imagem menor, como no exemplo abaixo, onde a maior imagem possue 1000x1000 e o seu max-width é de 1050px. Após arrumar essas variaveis existe também a variavel SRCSET, onde nela escolhemos a imagem que ira substuir a imagem grande caso ultrapasse os limites de pixels, é possivel ver um exemplo logo abaixo também, já na variavel TYPE dizemos o tipo de imagem para informar ao navegador o tipo de arquivo que está sendo apresentado, como por exemplo TYPE="IMAGE/PNG ou JPEG".</p>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <p><em><strong>A ORDEM ALTERA O RESULTADO FINAL, PRIMEIRO VEM OS MENORES E DEPOIS OS MAIORES!!!</strong></em></p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/ImgP.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/ImgM.png" type="image/png">
+        <img src="imagens/ImgG.png" alt="imagem fléxivel">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>vamos aprender a reproduzir audio!!</p>
+    <p>Essa é a maneira mais simples de colocar audio, mas também a mais propensa a erros. Usamos a tag AUDIO junto de SRC e nesse caso usamos o parametro CONTROLS para criar uma interface ao usuário para controar o áudio.</p>
+    <audio src="midia/musiquinha.asher-fulero.mp3" preload="none" controls></audio> <!--Tipos de mídia em áudio: MP3 WAV OGG-->
+
+    <h2>Outra forma mais completa de colocar audio</h2>
+    <p>Usando um conversor, podemos alterar o MP3 para WAV ou OGG, é bom usar os três tipos ao mesmo tempo, pois em alguns navegadores, audios em MP3 não carregam automaticamente, ficaria mais ou menos assim:</p>
+    <audio preload="metadata" controls loop autoplay>
+        <source src="midia/musiquinha.asher-fulero.mp3" type="audio/mpeg">
+        <source src="midia/musiquinha.asher-fulero.ogg" type="audio/ogg">
+        <source src="midia/musiquinha.asher-fulero.wav" type="audio/wav">
+    </audio>
+    <p>Caso o audio não tenha aparecido, infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/musiquinha.asher-fulero.mp3" target="_blank" download="midia/musiquinha.asher-fulero.mp3" type="audio/mpeg">Clique aqui para baixar o arquivo em MP3.</a></p>
+    <p>O download não funciona devido ao mesmo erro do pdf, o navegador abre em outra janela ao inves de realizer o download, para resolver esse erro, use TARGET="_BLANK".</p>
+    <p><strong>Evite sempre usar mídia WAV pois elas são MUITO pesadas</strong>.</p>
+    <p>Para controloar o áudio com maestria, existem alguns parametros que podemos usar, como o parametro AUTOPLAY, que roda o áudio automaticamente, o parametro CONTROLS, que dá o usuário uma interface para controlar o áudio, o parametro LOOP, que faz com que o áudio fique rodando em loop, e o parametro PRELOAD, que possue algumas variaveis, sendo ela AUTO (O site só abrira se o áudio estiver totalmente carregado), METADATA (O site pegara somente algumas informações cruciais sobre o áudio) e por ultimo NONE (O site não pegara nenhuma informação sobre o áudio).</p>
+    <p>Dentro de AUDIO podemos usar a tag SOURCE SRC para achar o arquivo em mp3, ogg e wav. Assim como no exemplo acima</p>
+</body>
+</html>

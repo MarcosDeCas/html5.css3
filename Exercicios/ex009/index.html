@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        body{
+            background-color: rgb(243, 209, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas:</h2>
+    Para a criação de listas ordenadas usamos a tag OL jundo da tag LI em cada item da lista, para a criação de varias LI podemos usar li*+número de vezes que você quer que repita li:
+    <ol>
+        <li>Acordar</li>
+        <li>Mandar mensagem pro Pauo</li>
+        <li>Tomar café</li>
+        <li>Estudar</li>
+        <li>Praticar</li>
+        <li>Passar o resto do dia de boa</li>
+    </ol>
+    <p>Para a alteração de listas podemos usar a tag TYPE dentro da tag OL, assims podemons personalizar a nossa lista com "1", "A", "a", "I" e "i" (mas tome cuidado, pois essa tag TYPE dentro da tag OL pode estar vindo a ser obsoleta)</p>
+    <ol type="A">
+        <li>Acordar</li>
+        <li>Mandar mensagem pro Pauo</li>
+        <li>Tomar café</li>
+        <li>Estudar</li>
+        <li>Praticar</li>
+        <li>Passar o resto do dia de boa</li>
+    </ol>
+    <p>Uma outra forma de personalizar a lista é indo em HEAD e usando a tag SYTLE e dentro dela usando a tag OL{LIST-STYLE-TYPE: *varias variações*; (Essa é a melhor forma pois não correr o risco de ficar obsoleta tão cedo, a prioriade da personalização é sempre da tag sttle.)</p>
+
+
+    <h2>Listas não-ordenadas:</h2>
+    <p>Para a criação de listas não-ordenadas usamos a tag UL jundo da tag LI em cada item da lista:</p>
+    <ul type="square">
+        <li>Pão</li>
+        <li>Maça</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Batata</li>
+    </ul>
+    <p>Podemos alterar a personalização da lista usando a tag TYPE dentro da tag UL, as possiveis alterações são "circle", "square" e "disc". (Tome cuidado pois esse método pode estar obsoleto)</p>
+    <p>Uma outra forma de personalizar a lista é indo em HEAD e usando a tag SYTLE e dentro dela usando a tag UL{LIST-STYLE-TYPE: "circle", "square" e "disc"; (Essa é a melhor forma pois não correr o risco de ficar obsoleta tão cedo, olhe o HEAD dessa codficação para enteder melhor, a prioriade da personalização é sempre da tag sttle.)</p>
+
+
+<h2>Juntando listas:</h2>
+<p>É possivel fazer listas dentro de listas da seguinte forma:</p>
+<p>Caso queira que o inicio de uma das listas começe pelo final de outra, usa-se a tag START="número que eu queira", assim como é apresentado abaixo:</p>
+<ol>
+    <li>Carnes:</li>
+    <ol>
+        <li>Frango</li>
+        <li>Picanha</li>
+        <li>Carne moida</li>
+        <li>Hamburguer</li>
+    </ol>
+    <li>Refrescos:</li>
+    <ol start="5">
+        <li>Suco</li>
+        <li>Refrigerante</li>
+        <li>Água</li>
+        <li>Vinho</li>
+    </ol>
+</ol>
+<p>É possivel também a criação de um terceiro nível:</p>
+    <ul type="square">
+        <li>Meu jogos favoritos:</li>
+        <ul type="disc">
+            <li>Sério Souls</li>
+            <ul type="circle">
+                <li>Dark souls 3</li>
+                <li>Bloodborne</li>
+            </ul>
+            <li>Jogos de RPG</li>
+            <ul type="circle">
+                <li>Vampry</li>
+                <li>Skyrim</li>
+            </ul>
+        </ul>
+    </ul>
+    <h2>Lista de definições:</h2>
+    <p>Aqui podemos listar uma definição de um termo usando as tags DT e DD da seguinte forma:</p>
+    <dt>
+        <dt>Bloodborne</dt>
+        <dd>Jogo da série souls estilo gótico</dd>
+    </dt>
+
+</body>
+</html>

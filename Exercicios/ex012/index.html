@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente no meu próprio servidor:</h1>
+    <p>Essa é a forma mais simples de se fazer, assim como no áudio.Usa-se a tag VIDEO junto do parametro SRC para encontrar o vídeo. Alguns parametros que podem ser usados: WIDTH/HEIGHT (tamanho do vídeo em tela, sendo WIDTH/LARGURA e HEIGHT/ALTURA diminuir o tamanho não é a mesma coisa que diminuir o tamanho do arquivo) - CONTROLS - POSTER (dá uma capa para o vídeo) - AUTOPLAY - TYPE (pode ser VIDEO/MP4 ou VIDEO/WEBM ou VIDEO/OGG).</p>
+    <video src="midia/meu.video.mp4" width="350" controls autoplay loop></video>
+    <video src="midia/meu.video.webm" width="350" controls autoplay></video>
+    <video src="midia/meu_video.ogv" width="350" controls autoplay></video>
+    <h1>Como colocar vídeos de forma aperfeiçoada:</h1>
+    <p>Seguindo a mesma lógica de mídias, usamos a tag VIDEO e dentro da tag usamos a tag SOURCE:SRC junto da tag TYPE, assim caso o vídeo não seja compatível com o seu navegador, o mesmo vídeo podera ser aberto em outro formato no seu computador, aplicando diversidade ao site. A ORDEM TEM TOTAL INFLUENCIA!!! Sempre comece do menor para o maior em KB, MB ou GB, economizando assim o tanto de tráfego de dados que seu site consumira.</p>
+    <video controls width="200">
+        <source src="midia/meu.video.mp4" type="video/mp4">
+        <source src="midia/meu.video.m4v" type="video/mp4">
+        <source src="midia/meu.video.webm" type="video/webm">
+        <source src="midia/meu_video.ogv" type="video/ogg">
+    </video>
+    <p>Caso o vídeo não rode em seu navegador, isso significa que seu navegador não tem compatibilidade com reprodução de vídeos. Pois o vídeo aparece em todos os formatos, sendo ele MP4, M4V, WEBM, OGV.</p>
+    <p><em><strong>MUITO IPORTANTE:</strong> Só use esse jeito de colocar vídeos caso o cliente PEÇA e sempre informe dos riscos que hospedar vídeos em um site tem, pois pode sair muito caro, existe uma forma de fazer não sair caro, leia o próximo parágrafo e descubra.</em></p>
+    <h1>Inserindo vídeos do Youtube:</h1>
+    <p>Para usar os vídeos do youtube (e até do vimeo) podemos simplemente ir no vídeo, clicar em <em><strong>compartilhar</strong></em> e depois em <strong><em>incorpar.</em></strong><br>Assim, obteremos a codificação completa para reprodução do vídeo em nosso site, é possível alterar ela. Os Vídeos no Youtube usam a tag IFRAME junto dos parametros WIDTH/HEITGH, SCR, TITTLE, FRAMEBORDER, ALLOW (Para informar específicações do vídeo) e ALLOWFULLSCREEN (Para dar a opção de dela cheia).
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/P7Cz2IPe5J8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>Porque usar Youtube? O youtube é o maior buscador do mundo depois do Google, além de reduzir os custos do consumo de trafêgo de dados para 0, pois o consumo partira do youtube. Aceita todos os tipos de formatos (Sendo o melhor mp4) evitando muito trabalho e dar mais vizualição e amplia a abrangencia do algoritmo do google.</p><br><p>O único problema é, os vídeos se tornam públicos, então qualquer pessoa pode ver. Para resolver isso, usaremos o <strong>Vimeo</strong></p>
+
+    <h1>Inserindo vídeos do Vimeo:</h1>
+    <p>Com o Vimeo seguirmos a mesma lógica do youtube para colocar o vídeo em seu site, usando a mesma tag IFRAME e com os mesmos parametros.</p>
+        <iframe src="https://player.vimeo.com/video/524933864?h=1ac4fd9fb4&autoplay=1&loop=1&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <p><a href="https://vimeo.com/524933864">Vimeo | Video Power</a> from <a href="https://vimeo.com/staff">Vimeo Staff</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        <p>Usar o vimeo possuem algumas vantagens e desvantagens, sendo o motivo principal a privação dos vídeos, fazendo que apenas pessoas como por exemplos, assinantes de um curso, possam ver.<br><strong>Outras vantagens são:</strong> Qualidade de vídeo ótima, quando pausar não aparece outros vídeos e possuem mais opções na hora de incorporar o vídeo.<br><strong>Algumas desvantagens são:</strong> Codex e algoritmo inferiores ao Youtube, pode dar umas travadinhas e é pago mensalmente pelo cliente, valor bem salgado.</p>
+</body>
+</html>

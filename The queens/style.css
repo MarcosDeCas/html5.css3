@@ -1,0 +1,47 @@
+@charset "UFT-8";
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-image: linear-gradient(180deg, #4b4674, #A64949);
+}
+main{
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #472c3a;
+    width: 700px;
+    padding: 10px;
+    margin: auto;
+}
+img{
+    margin: auto;
+    box-shadow: 5px 5px 15px #472c3a;
+    border-radius: 360px;
+    height: 250px;
+    width: 250px;
+}
+h1{
+    color: #73485C;
+    text-align: center;
+    text-shadow: 1px 1px 0px #31324e;
+}
+h2{
+    text-align: justify;
+    color: #A64949;
+}
+p{
+    text-align: justify;
+}
+ul{
+    text-align: justify;
+}
+ol{
+    text-align: justify;
+}
+li{
+    text-align: justify;
+}
+a{
+    color: #A64949;
+}

@@ -1,0 +1,13 @@
+@charset "UFT-8";
+
+div{
+    display: inline-block;
+    background-color: rgba(139, 81, 161, 0.438);
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+div:hover{
+    background-color: rgb(253, 253, 101);
+}

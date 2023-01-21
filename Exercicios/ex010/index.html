@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhandos com links</title>
+</head>
+<body>
+    <h1><em>Usando links externos:</em></h1>
+    <hr>
+    <p>Para colarmos links no site, nos usamos a tag A (ancora) como no exemplo a seguir:</p>
+    <strong>
+        <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io">repositório público no Github</a></p>
+    </strong>
+
+    <p>Também é possivel fazer com que o link seja aberto em uma nova janela em branco usando os parametros TARGET e REL, como no exemplo a seguir (sempre faça assim, é melhor):</p>
+    <p><strong>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="externa">canal gratuido no youtube</strong></a></p>
+    <h2>Usando links internos:</h2>
+    <p>Usando uma lógica parecida com a inserção de fotos dentro do arquivo, é possivel adcionar links internos com a tag A + CTRL e SPACE, assim selecionando a sua nova página:</p>
+    <p>Está é a primeira página do meu site, a segunda página está <a href="pag002.html" target="_self" rel="next">aqui</a></p>
+    <p>Podemos usar a tag REL NEXT ou REAL PREV para ajudar o sistema de naveção a encontrar a lógica do seu site.</p>
+    <br>
+    <p>Quando o site estiver dentro de um arquivo, ocorre uma pequena alteração, como é feito a seguir:</p>
+    <p>Você também pode acessar minha <a href="Noticías/pag003.html" targer="_self" rel="next">página de notícias:</a></p>
+    <h1>Links para download</h1>
+    <ul>
+        <p>Link de download para PDF não funcionam, isso ocorre porque o navegador já reconhece como pdf e manda para a janela padrão de pdf, mais uma dica é sempre usar a tag TARGET="_BLANK" para abrir o pdf em outra janela, além da tag TYPE="application/pdf".</p>
+        <li><a href="Livro/10 - Ligações em toda parte.pdf" target="_blank" download="10 - Ligações em toda parte.pdf" type="application/pdf">Baixar o livro pdf</a></li>
+
+        <p>Para arquivos em zip, é possivel fazer o download com a tag A e selecionando o arquivo requirido, usando também a tag DOWNLOAD com o nome do arquivo e a tag TYPE para indicar ao navegador que existe um arquivo sendo baixado</p>
+        <li><a href="livro/favicon_io.zip" download="favicon_io.zip" type="application/zip" >Livro compactado em zip</a></li>
+    </ul>
+</body>
+</html>

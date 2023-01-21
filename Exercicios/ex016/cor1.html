@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores em CSS</title>
+</head>
+<body>
+    
+    <h1>Representação por nomes</h1>
+    <p>A Representação por nomes é a mais simples e a mais limitada, onde podemos apenas dizer o nome da cor que queremos na tag SYTLE junto dos parâmetros de cor (COLOR e BACKGROUND-COLOR) para que a cor seja utilizada:</p>
+    <h2 style="background-color: blue ; color: white;">Exempo de Cores:</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla facilis inventore reprehenderit autem ipsum, voluptatum laudantium fuga enim officia saepe ad et sit excepturi libero nesciunt reiciendis nam harum voluptas!</p>
+
+    <!--Decimal: 0 1 2 3 4 5 6 7 8 9-->
+    <!--Hexadecimal: 0 1 2 3 4 5 6 7 8 9 A B C D E F-->
+    <h1>Representação por hexadecimais</h1>
+    <p>A reprentação por heaxdecimal é feita por seis caractéres sendo os dois primeiros representando vermelho, os dois centrais represetando o verde e os dois ultimos represetando o azul. O número de força depende do caractére que for utilizado, sendo 0 nulo e F o máximo.</p>
+    <h2 style="background-color: #0000ff ; color: #ffffff ;">Exemplo de Cores:</h2>
+    <p>orem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, earum aliquid laudantium ad possimus maxime ducimus hic vel perspiLciatis rerum, adipisci architecto repellendus! Sint quo nostrum, rerum consectetur quasi possimus.</p>
+
+    <h1>Usando a função rgb():</h1>
+    <p>Utilizando a função RGB(***, ***,***); podemos também dar cor a algo dentro da tag STYLE, seguindo a mesma lógica de usar hexadecimal, mas apenas com números que variam de 0 até 255 (0 o mínimo e 255 o máximo) </p>
+    <h2 style="background-color: rgb(0, 0, 255); color: rgb(255, 255, 255);">Exemplo de Cores:</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus optio velit porro pariatur? Tenetur maiores animi quae quidem necessitatibus, consequuntur eum, adipisci odit voluptatibus officiis rem, debitis amet nisi!</p>
+
+    <h1>Utilizando carácteristicas de cores (Matriz, Saturação e Luminosidade):</h1>
+    <p>Utilizando a tag HSL(***, ***%, ***%) sendo a matrix um número de 0 até 240 e a saturação e a luminosidade medida em porcentagem, é o mais complicado de se usar, não vejo vantagem em utilizar;</p>
+    <h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Exemplo de Cores:</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione velit ullam maiores cumque commodi aliquam molestiae quia nostrum vel quaerat excepturi, architecto dolorum pariatur? Sit, aliquid quibusdam! Esse, corporis.</p>
+
+    <h1>Facilitando o uso de VSCode</h1>
+    <p>Disparado o mehor método, para usar é simples, use qualquer um dos métodos anteriores e passe o cursor do mouse em cima do quadradinho de cor que aparecer do lado, abrirá uma tabela de cores em rgb (você pode trocar a forma de representação de cores clicando em cima da tag RGB dentro do VSCode) e você podera escolher qualquer cor apenas olhando a tonalidade, a forma que você optar para representar as cores (originalmente rgb) apareça de forma automática, aumentando suas possibilidades criativas e diminuindo o trabalho manual. Também é possivel alterar a transparencia da cor.</p>
+    <h2 style="background-color: hsla(182, 100%, 50%, 0.445); color: #174e4a;">Exemplo de Cores:</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione velit ullam maiores cumque commodi aliquam molestiae quia nostrum vel quaerat excepturi, architecto dolorum pariatur? Sit, aliquid quibusdam! Esse, corporis.</p>
+</body>
+</html>
