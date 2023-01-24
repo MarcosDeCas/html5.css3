@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <style>
+        body{
+            background: black url(imagens/igor-sporynin-abng8QH-tjE-unsplash_gimp.jpg) no-repeat fixed center center;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.466);
+            background-color: rgb(83, 83, 83);
+            color: white;
+            font-weight: bolder;
+            border-radius: 50px;
+            width: auto;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-variant: small-caps;
+        }
+        table{
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.466);
+            border-collapse: collapse;
+            width: 800px;
+            text-align: left;
+            margin: auto;
+        }
+        thead{
+            border: 1px solid black;
+            font-weight: bolder;
+            padding: 20px;
+            background-color: rgb(184, 184, 184);
+        }
+        tr.fonte, tr.fonte > th{
+            color: white;
+            background-color: rgb(107, 107, 107);
+            text-align: center;
+        }
+        tr.fonte > td{
+            background-color: rgb(107, 107, 107);
+        }
+        tbody > tr > th{
+            background-color: white;
+        }  
+        td, th{
+            padding: 15px;
+            border: 1px solid black;
+            transition-duration: 0.3s;
+        }
+        td{
+            background-color: white;
+        }
+        td:hover{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Boletim escolar do Paulo</h1>
+    <table>
+        <thead>
+            <tr class="fonte">
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr class="fonte">
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+
+            <tr class="fonte">
+                <th scope="row" colspan="4">Média de Exatas</th>
+                <td>10</td>
+            </tr>
+
+
+            <tr>
+                <th rowspan="3" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Filosofia</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+
+            <tr class="fonte">
+                <th scope="row" colspan="4">Média de Humanas</th>
+                <td>10</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>

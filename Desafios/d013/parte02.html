@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            padding-top: 100px;
+        }
+        table{
+            border-spacing: 5px;
+            width: 400px;
+            text-align: center;
+            margin: auto;
+        }
+        caption{
+            border: 1px solid black;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: rgb(184, 184, 184);
+        }
+        td{
+            border-radius: 20px;
+            padding: 10px;
+            border: 1px solid black;
+            transition-duration: 0.3s;
+        }
+        td:hover{
+            padding: 15px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Desafio 13 - parte 2</h1>
+        <table>
+            <caption>Testando tabelas</caption>
+            <tbody>
+                <tr>
+                    <td colspan="4">A</td>
+                    <td rowspan="4">B</td>
+                <tr>
+                    <td rowspan="4">C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                <tr>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                <tr>
+                    <td>J</td>
+                    <td>L</td>
+                    <td>M</td>
+                <tr>
+                    <td colspan="4">N</td>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

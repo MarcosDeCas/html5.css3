@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            padding-top: 100px;
+            font-variant: small-caps;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            text-align: left;
+            margin: auto;
+        }
+        caption{
+            font-variant: small-caps;
+            font-weight: bolder;
+            background-color: gray;
+            padding: 12px;
+        }
+        thead{
+            border: 1px solid black;
+            font-weight: bolder;
+            padding: 20px;
+            background-color: rgb(184, 184, 184);
+        }
+        td.destaque{
+            background-color: rgb(255, 255, 155);
+        }
+        td, th{
+            padding: 15px;
+            border: 1px solid black;
+            transition-duration: 0.3s;
+        }
+        td:hover{
+            background-color: lightgray;
+        }
+        col.mid{
+            background-color: rgba(202, 202, 202, 0.726);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    
+    <table>
+        <colgroup>
+            <col class="Cnome">
+            <col class="mid" span="2">
+            <col class="Cprof">
+        </colgroup>
+        <caption>Cadatro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Marcos</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Paulo</td>
+            <td>F</td>
+            <td>23</td>
+            <td>Atleta</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Desinger</td>
+        </tr>
+        <tr>
+            <td>Maria Horrana</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Psicologa</td>
+        </tr>
+        <tr>
+            <td>Livia</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Maquiadora</td>
+        </tr>
+    </table>
+</body>
+</html>
